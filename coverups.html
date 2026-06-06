@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Custom Tattoo Designs | Ink Magic Mantra Tattoo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+}
+
+header {
+    background: url("images/service-banner.jpg") center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    background: rgba(0,0,0,0.7);
+    padding: 20px 40px;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    letter-spacing: 3px;
+}
+
+section {
+    padding: 60px 10%;
+}
+
+.about-service {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta a {
+    text-decoration: none;
+    padding: 15px 40px;
+    background: #d4af37;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 2px solid #d4af37;
+}
+
+.cta a:hover {
+    background: transparent;
+    color: #d4af37;
+}
+
+footer {
+    background: black;
+    padding: 30px;
+    text-align: center;
+    color: #aaa;
+}
+.gallery img {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Cover-ups</h1>
+</header>
+
+<section>
+<div class="about-service">
+<p>
+At Ink Magic Mantra Tattoo, we specialize in creating custom tattoo designs that are unique to you. 
+Our artists work closely with you to bring your ideas to life using premium inks and hygienic techniques.
+</p>
+<p>
+Whether you want a small meaningful tattoo or a full sleeve design, we ensure precision, creativity, and comfort.
+</p>
+</div>
+
+<div class="gallery">
+<img src="images/service1.jpg" alt="Tattoo Image 1">
+<img src="images/service2.jpg" alt="Tattoo Image 2">
+<img src="images/service3.jpg" alt="Tattoo Image 3">
+<img src="images/service4.jpg" alt="Tattoo Image 4">
+</div>
+
+<div class="cta">
+<a href="https://wa.me/918805252032" target="_blank">BOOK APPOINTMENT</a>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 Ink Magic Mantra Tattoo</p>
+<p>Vasind, Maharashtra | Phone: 088052 52032</p>
+</footer>
+
+</body>
+<!-- Image Popup Modal -->
+<div id="imgModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+background:rgba(0,0,0,0.9); justify-content:center; align-items:center; z-index:999;">
+    <span onclick="closeImg()" style="position:absolute; top:20px; right:40px; font-size:40px; cursor:pointer; color:#d4af37;">&times;</span>
+    <img id="modalImg" style="max-width:90%; max-height:90%; border:3px solid #d4af37;">
+</div>
+
+<script>
+const images = document.querySelectorAll(".gallery img");
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImg");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+    });
+});
+
+function closeImg() {
+    modal.style.display = "none";
+}
+</script>
+
+</html>

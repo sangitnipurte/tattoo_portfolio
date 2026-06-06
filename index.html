@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink Magic Mantra Tattoo | Premium Tattoo Studio in Vasind</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #0a0a0a;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(0, 0, 0, 0.95);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #d4af37;
+            box-shadow: 0 2px 20px rgba(212, 175, 55, 0.3);
+        }
+        .hero-logo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #d4af37;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+        }
+
+
+        nav .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav .logo span {
+            color: #d4af37;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #d4af37;
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+/* Hero Section */
+
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+}
+
+/* Animated Background */
+
+.hero::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.80)
+    ),
+    url("image/hero.png") no-repeat;
+
+    background-size: cover;
+    background-position: center;
+
+    animation: zoomHero 20s ease-in-out infinite alternate;
+
+    z-index: -1;
+}
+
+/* Hero Content */
+
+.hero-content {
+    max-width: 900px;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+
+    animation: fadeUp 1.5s ease;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+
+    text-transform: uppercase;
+    letter-spacing: 8px;
+
+    text-shadow:
+        0 0 15px rgba(212,175,55,.2),
+        0 0 40px rgba(0,0,0,.8);
+}
+
+.hero h1 span {
+    color: #d4af37;
+    display: block;
+    font-size: 3rem;
+    margin-top: 0.5rem;
+}
+
+/* Zoom Animation */
+
+@keyframes zoomHero {
+
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.12);
+    }
+
+}
+
+/* Text Animation */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+        .rating {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #d4af37;
+            animation: fadeInUp 1s ease 0.2s backwards;
+        }
+
+        .rating .stars {
+            color: #ffd700;
+            margin-right: 10px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            letter-spacing: 2px;
+            animation: fadeInUp 1s ease 0.4s backwards;
+            color: #ccc;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.6s backwards;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: #d4af37;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s;
+            border: 2px solid #d4af37;
+        }
+
+        .cta-button:hover {
+            background: transparent;
+            color: #d4af37;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: #d4af37;
+        }
+
+        .cta-button.secondary:hover {
+            background: #d4af37;
+            color: #000;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 6rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #fff;
+            position: relative;
+            padding-bottom: 1.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #d4af37;
+        }
+        .upload-btn {
+    background: #d4af37;
+    color: black;
+    padding: 12px 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.upload-btn:hover {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+}
+        /* About Section */
+        #about {
+            background: #0f0f0f;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text {
+            color: #ccc;
+            font-size: 1.15rem;
+            line-height: 1.9;
+        }
+
+        .about-text h3 {
+            color: #d4af37;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-box {
+            background: rgba(212, 175, 55, 0.1);
+            padding: 2rem;
+            text-align: center;
+            border: 2px solid #d4af37;
+            transition: all 0.3s;
+        }
+
+        .stat-box:hover {
+            background: rgba(212, 175, 55, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .stat-box .number {
+            font-size: 3rem;
+            color: #d4af37;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-box .label {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, #d4af37 0%, #aa8a2e 100%);
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-image::before {
+            content: '🎨';
+            font-size: 15rem;
+            opacity: 0.2;
+            position: absolute;
+        }
+
+        /* Services Section */
+        #services {
+            background: #121212;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 3rem 2rem;
+            text-align: center;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .service-card:hover {
+            border-color: #d4af37;
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
+        }
+
+        .service-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            color: #d4af37;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .service-card p {
+            color: #ccc;
+            line-height: 1.8;
+        }
+
+        /* Location Section */
+        #location {
+            background: #0f0f0f;
+        }
+
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .location-info {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border: 2px solid #d4af37;
+        }
+
+        .location-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .location-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .location-icon {
+            font-size: 2rem;
+            color: #d4af37;
+            min-width: 40px;
+        }
+
+        .location-details h3 {
+            color: #d4af37;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .location-details p {
+            color: #ccc;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        .map-link {
+    text-decoration: none;
+    display: block;
+}
+
+.map-placeholder {
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.map-placeholder:hover {
+    transform: scale(1.02);
+}
+
+        .map-placeholder {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #d4af37;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 2px solid #d4af37;
+        }
+
+
+        .map-placeholder::before {
+            content: '📍';
+            font-size: 8rem;
+            opacity: 0.3;
+        }
+
+        .map-placeholder .map-text {
+            position: absolute;
+            color: #d4af37;
+            font-size: 1.5rem;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: #121212;
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 3rem 2rem;
+            text-align: center;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s;
+            text-decoration: none;
+            display: block;
+        }
+
+        .contact-card:hover {
+            border-color: #d4af37;
+            transform: translateY(-5px);
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .contact-card .icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-card h3 {
+            color: #d4af37;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-card p {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+        nav .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav .logo img {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;          /* makes it circle */
+            object-fit: cover;
+            border: 2px solid #d4af37;  /* gold border */
+        }
+
+          
+        /* Footer */
+        footer {
+            background: #000;
+            color: #ccc;
+            text-align: center;
+            padding: 3rem 5%;
+            border-top: 2px solid #d4af37;
+        }
+
+        footer p {
+            margin-bottom: 1rem;
+        }
+
+        footer .social-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        footer .social-links a {
+            color: #d4af37;
+            font-size: 2rem;
+            transition: all 0.3s;
+        }
+
+        footer .social-links a:hover {
+            transform: scale(1.2);
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero h1 span {
+                font-size: 2rem;
+            }
+
+            .about-content,
+            .location-content {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+        .whatsapp-btn{
+        position:fixed;
+        bottom:20px;
+        right:20px;
+        width:65px;
+        height:65px;    
+        background:#25D366;
+        border-radius:50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:30px;
+        color:white;
+        text-decoration:none;
+        z-index:9999;
+        box-shadow:0 0 20px rgba(37,211,102,.6);
+        }
+        .map-placeholder {
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+            <img src="image/logo.png" alt="Logo">
+            Ink <span>Magic</span> Mantra
+        </div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="image/logo.png" class="hero-logo" alt="Logo">
+            <h1>INK MAGIC <span>MANTRA TATTOO</span></h1>
+            <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span>4.9 (176 Reviews)</span>
+            </div>
+            <p>Premium Tattoo Artistry in Vasind, Thane</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/918805252032" class="cta-button">Book Appointment</a>
+                <a href="#services" class="cta-button secondary">View Services</a>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Where Art Meets Skin</h3>
+                <p>Welcome to Ink Magic Mantra Tattoo, Vasind's premier tattoo studio where creativity and precision come together to create stunning body art. With a 4.9-star rating and over 176 satisfied clients, we've established ourselves as the trusted choice for tattoo enthusiasts in Maharashtra.</p>
+                <p>Our experienced artists specialize in a wide range of tattoo styles, from traditional designs to contemporary masterpieces. We use only the highest quality inks and maintain strict hygiene standards to ensure your safety and satisfaction.</p>
+                <p>Every tattoo tells a story, and we're here to help you tell yours with exceptional artistry and professionalism.</p>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <span class="number">4.9</span>
+                        <span class="label">Star Rating</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">1000+</span>
+                        <span class="label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <!-- Decorative image placeholder -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Custom Designs</h3>
+                <p>Unique, personalized tattoo designs created specifically for you. Bring your vision to life with our creative expertise.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🖋️</div>
+                <h3>Traditional Tattoos</h3>
+                <p>Classic tattoo styles with bold lines and vibrant colors. Timeless art that never goes out of style.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✨</div>
+                <h3>Realism & Portraits</h3>
+                <p>Lifelike portraits and realistic imagery with stunning detail and precision craftsmanship.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌸</div>
+                <h3>Floral & Mandala</h3>
+                <p>Intricate floral designs and sacred geometry mandalas with precision and beauty.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔮</div>
+                <h3>Cover-ups</h3>
+                <p>Expert cover-up work to transform old tattoos into stunning new masterpieces.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💫</div>
+                <h3>Touch-ups</h3>
+                <p>Professional touch-up services to refresh and revitalize your existing tattoos.</p>
+            </div>
+        </div>
+    </section> -->
+        <!-- <div class="services-grid">
+
+        <a href="custom-designs.html" target="_blank" class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>Custom Designs</h3>
+            <p>Unique, personalized tattoo designs created specifically for you.</p>
+        </a>
+
+        <a href="traditional.html" target="_blank" class="service-card">
+            <div class="service-icon">🖋️</div>
+            <h3>Traditional Tattoos</h3>
+            <p>Classic tattoo styles with bold lines and vibrant colors.</p>
+        </a>
+
+        <a href="realism.html" target="_blank" class="service-card">
+            <div class="service-icon">✨</div>
+            <h3>Realism & Portraits</h3>
+            <p>Lifelike portraits and realistic imagery with stunning detail.</p>
+        </a>
+
+        <a href="floral.html" target="_blank" class="service-card">
+            <div class="service-icon">🌸</div>
+            <h3>Floral & Mandala</h3>
+            <p>Intricate floral designs and sacred geometry mandalas.</p>
+        </a>
+
+        <a href="coverups.html" target="_blank" class="service-card">
+            <div class="service-icon">🔮</div>
+            <h3>Cover-ups</h3>
+            <p>Expert cover-up work to transform old tattoos.</p>
+        </a>
+
+        <a href="touchups.html" target="_blank" class="service-card">
+            <div class="service-icon">💫</div>
+            <h3>Touch-ups</h3>
+            <p>Professional touch-up services.</p>
+        </a>
+
+    </div> -->
+    <!-- <div style="text-align:center; margin-bottom:20px;">
+        <input type="file" id="imageInput" accept="image/*" multiple hidden>
+        <button onclick="document.getElementById('imageInput').click()" class="upload-btn">
+        ➕ Add New Photos
+    </button>
+    </div> -->
+
+    <section id="services">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services-grid">
+
+        <a href="custom-designs.htm" target="_blank" class="service-card">
+            <img src="image/c1.PNG" class="service-image" alt="Custom Tattoo">
+            <h3>Custom Designs</h3>
+            <p>Unique, personalized tattoo designs created specifically for you.</p>
+        </a>
+
+        <a href="traditional.html" target="_blank" class="service-card">
+            <img src="image/t1.PNG" class="service-image" alt="Traditional Tattoo">
+            <h3>Traditional Tattoos</h3>
+            <p>Classic tattoo styles with bold lines and vibrant colors.</p>
+        </a>
+
+        <a href="realism.html" target="_blank" class="service-card">
+            <img src="image/r1.jpeg" class="service-image" alt="Realism Tattoo">
+            <h3>Realism & Portraits</h3>
+            <p>Lifelike portraits and realistic imagery with stunning detail.</p>
+        </a>
+
+        <a href="floral.html" target="_blank" class="service-card">
+            <img src="image/m1.jpeg" class="service-image" alt="Floral Tattoo">
+            <h3>Floral & Mandala</h3>
+            <p>Intricate floral designs and sacred geometry mandalas.</p>
+        </a>
+
+        <a href="coverups.html" target="_blank" class="service-card">
+            <img src="images/coverup.jpg" class="service-image" alt="Coverup Tattoo">
+            <h3>Cover-ups</h3>
+            <p>Expert cover-up work to transform old tattoos.</p>
+        </a>
+
+        <a href="touchups.html" target="_blank" class="service-card">
+            <img src="images/touchup.jpg" class="service-image" alt="Touchup Tattoo">
+            <h3>Touch-ups</h3>
+            <p>Professional touch-up services.</p>
+        </a>
+
+    </div>
+</section>
+
+
+    <!-- Location Section -->
+    <section id="location">
+        <h2 class="section-title">Location</h2>
+        <div class="location-content">
+            <div class="location-info">
+                <div class="location-item">
+                    <div class="location-icon">📍</div>
+                    <div class="location-details">
+                        <h3>Address</h3>
+                        <p>Shop no 2, First floor, Nana Nani Sankul<br>
+                        Chhatrapati Shivaji Maharaj Nagar<br>
+                        Vahind West, Maharashtra 421601</p>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-icon">🕐</div>
+                    <div class="location-details">
+                        <h3>Working Hours</h3>
+                        <p>Opens 11:00 AM <br>
+                        <p>Closes 11:00 PM <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-icon">📞</div>
+                    <div class="location-details">
+                        <h3>Phone</h3>
+                        <p>088052 52032</p>
+                    </div>
+                </div>
+            </div>
+  <a href="https://maps.app.goo.gl/mz27jRpw8gcx2Nsh7" target="_blank" class="map-link">
+    <div class="map-placeholder">
+        <div class="map-text">📍 Vasind, Maharashtra</div>
+    </div>
+</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-methods">
+            <a href="tel:08805252032" class="contact-card">
+                <div class="icon">📞</div>
+                <h3>Call Us</h3>
+                <p>088052 52032</p>
+            </a>
+            <a href="https://wa.me/918805252032" class="contact-card" target="_blank">
+                <div class="icon">💬</div>
+                <h3>WhatsApp</h3>
+                <p>Chat with us</p>
+            </a>
+            <a href="https://maps.app.goo.gl/mz27jRpw8gcx2Nsh7" class="contact-card">
+                <div class="icon">🗺️</div>
+                <h3>Directions</h3>
+                <p>Get directions</p>
+            </a>
+            <a href="https://www.youtube.com/@Inkmagic_mantra_tattoo2711" class="contact-card" target="_blank">
+                <div class="icon">🌐</div>
+                <h3>Visit Website</h3>
+                <p>More information</p>
+            </a>
+        </div>
+    </section>
+    <a
+    href="https://wa.me/918805252032"
+    class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ink Magic Mantra Tattoo. All Rights Reserved.</p>
+        <p>Shop no 2, First floor, Nana Nani Sankul, Chhatrapati Shivaji Maharaj Nagar, Vahind West, Maharashtra 421601</p>
+        <p>Phone: 088052 52032</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1DJQ6PjkTp/" title="Facebook">Facebook📘</a>
+            <a href="http://instagram.com/inkmagic_mantra_tattoo" title="Instagram">Instargram📷</a>
+            <a href="https://wa.me/918805252032" title="WhatsApp">WhatsApp💬</a>
+        </div>
+    </footer>
+    
+</body>
+
+<!-- <script>
+const imageInput = document.getElementById("imageInput");
+const servicesGrid = document.querySelector(".services-grid");
+
+imageInput.addEventListener("change", function () {
+    const files = imageInput.files;
+
+    for (let i = 0; i < files.length; i++) {
+        const card = document.createElement("div");
+        card.className = "service-card";
+
+        const img = document.createElement("img");
+        img.src = URL.createObjectURL(files[i]);
+        img.className = "service-image";
+
+        const title = document.createElement("h3");
+        title.innerText = "New Tattoo";
+
+        const desc = document.createElement("p");
+        desc.innerText = "New service photo added.";
+
+        card.appendChild(img);
+        card.appendChild(title);
+        card.appendChild(desc);
+
+        servicesGrid.appendChild(card);
+    }
+});
+</script> -->
+
+
+</html>
