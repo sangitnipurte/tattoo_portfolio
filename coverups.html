@@ -81,9 +81,18 @@ footer {
     color: #aaa;
 }
 .gallery img {
+    width: 100%;
+    max-width: 280px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #d4af37;
+    margin: 0 auto;
+    display: block;
     cursor: pointer;
     transition: transform 0.3s;
 }
+
 .gallery img:hover {
     transform: scale(1.05);
 }
