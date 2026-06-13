@@ -773,6 +773,63 @@
     background:transparent;
     color:#d4af37;
 }
+/* awards button */
+.artist-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.cert-btn{
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    padding:14px 25px;
+    min-width:220px;
+    text-align:center;
+    font-weight:bold;
+    letter-spacing:1px;
+    border:2px solid #d4af37;
+    transition:0.3s;
+    border-radius:5px;
+}
+
+.cert-btn:hover{
+    background:transparent;
+    color:#d4af37;
+}
+/* certificate button */
+.artist-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.cert-btn{
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    width:220px;          /* Same width */
+    height:60px;          /* Same height */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-size:18px;
+    letter-spacing:1px;
+    border:2px solid #d4af37;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.cert-btn:hover{
+    background:transparent;
+    color:#d4af37;
+}
     </style>
 </head>
 <body>
@@ -840,9 +897,18 @@
         <img src="image/artist.png" alt="Tattoo Artist">
     </div>
 
-    <a href="certificates.html" class="certificate-btn">
-        🏆 View Certificates
+    <div class="artist-buttons">
+
+    <a href="certificates.html" class="cert-btn">
+        🎖️ Certificates
     </a>
+
+    <a href="awards.html" class="cert-btn">
+        🏆 Awards
+    </a>
+
+</div>
+
 
 </div>
     </section>
